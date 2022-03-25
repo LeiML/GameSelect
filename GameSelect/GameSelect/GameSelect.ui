@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameSelect</class>
+ <widget class="QWidget" name="GameSelect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1064</width>
+    <height>682</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GameSelect</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_4{background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+font: 700 italic 22pt &quot;Times New Roman&quot;;
+border-radius: 10px;
+}
+#pushButton_4:hover{
+background-color: rgb(10, 170, 200);
+}</string>
+         </property>
+         <property name="text">
+          <string>Bing Dwen Dwen</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton{background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+font: 700 italic 22pt &quot;Times New Roman&quot;;
+border-radius: 10px;
+}
+#pushButton:hover{
+background-color: rgb(10, 170, 200);
+}</string>
+         </property>
+         <property name="text">
+          <string>Greedy Snake</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_2{background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+font: 700 italic 22pt &quot;Times New Roman&quot;;
+border-radius: 10px;
+}
+#pushButton_2:hover{
+background-color: rgb(10, 170, 200);
+}</string>
+         </property>
+         <property name="text">
+          <string>2048</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_3{background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+font: 700 italic 22pt &quot;Times New Roman&quot;;
+border-radius: 10px;
+}
+#pushButton_3:hover{
+background-color: rgb(10, 170, 200);
+}</string>
+         </property>
+         <property name="text">
+          <string>Flappy Bird</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>36</pointsize>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Bing Dwen Dwen</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGraphicsView" name="graphicsView">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>GameSelect</receiver>
+   <slot>SelectGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>166</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>GameSelect</receiver>
+   <slot>SelectGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>GameSelect</receiver>
+   <slot>SelectGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>548</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>511</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>GameSelect</receiver>
+   <slot>SelectGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-5</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>SelectGame()</slot>
+ </slots>
+</ui>
